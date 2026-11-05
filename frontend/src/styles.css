@@ -9,18 +9,68 @@
   font-smooth: always;
   font-weight: 400;
 }
-* { box-sizing: border-box; }
-body { margin: 0; min-width: 320px; min-height: 100vh; }
-button, input { font: inherit; }
-button { cursor: pointer; }
-.app-shell { min-height: 100vh; display: flex; background: #111722; }
-.sidebar { width: 270px; flex-shrink: 0; display: flex; flex-direction: column; padding: 27px 18px 18px; background: #171f2c; border-right: 1px solid #293344; }
-.brand-row { display: flex; align-items: center; gap: 10px; font: 800 21px Manrope, sans-serif; letter-spacing: -.8px; padding: 0 8px 43px; }
-.brand-dot { color: #7bb7f7; }
-.brand-mark { width: 43px; height: 43px; display: grid; place-items: center; border-radius: 14px; color: #101a29; background: #8dc5ff; font: 800 27px Manrope, sans-serif; }
-.brand-mark.small { width: 31px; height: 31px; border-radius: 10px; font-size: 20px; }
-.side-label { display: flex; justify-content: space-between; color: #77869b; font-size: 10px; font-weight: 700; letter-spacing: 1.3px; padding: 0 10px; margin: 0 0 13px; }
-.room-list { display: grid; gap: 6px; }
+* { 
+  box-sizing: border-box;
+ }
+body {
+   margin: 0; min-width: 320px; min-height: 100vh;
+   }
+button, input {
+   font: inherit;
+   }
+button {
+   cursor: pointer;
+   }
+.app-shell { 
+  min-height: 100vh; display: flex; background: #111722; 
+}
+.sidebar {
+   width: 270px; 
+   flex-shrink: 0; 
+   display: flex;
+    flex-direction: column; 
+    padding: 27px 18px 18px; 
+    background: #171f2c; 
+    border-right: 1px solid #293344;
+   }
+.brand-row { 
+  display: flex; 
+  align-items: center; 
+  gap: 10px; font: 800 21px Manrope, sans-serif; 
+  letter-spacing: -.8px;
+   padding: 0 8px 43px; 
+  }
+.brand-dot { 
+  color: #7bb7f7; 
+}
+.brand-mark {
+   width: 43px;
+    height: 43px;
+     display: grid; 
+     place-items: center;
+      border-radius: 14px; color: #101a29; 
+      background: #8dc5ff; 
+      font: 800 27px Manrope, sans-serif; }
+.brand-mark.small { 
+  width: 31px; 
+  height: 31px; 
+  border-radius: 10px;
+   font-size: 20px; 
+  }
+.side-label { 
+  display: flex; 
+  justify-content: 
+  space-between; color: #77869b; 
+  font-size: 10px; 
+  font-weight: 700; 
+  letter-spacing: 1.3px;
+   padding: 0 10px; 
+   margin: 0 0 13px;
+   }
+.room-list {
+   display: grid;
+    gap: 6px; 
+  }
 .room-button { width: 100%; border: 0; border-radius: 10px; padding: 11px 10px; display: flex; align-items: center; gap: 11px; text-align: left; color: #aab6c8; background: transparent; transition: .18s ease; }
 .room-button:hover { background: #202b3b; }
 .room-button.selected { color: #edf5ff; background: #26364b; box-shadow: inset 2px 0 #83bdff; }
@@ -95,20 +145,59 @@ button { cursor: pointer; }
 .primary-button span { font-size: 18px; }
 .entry-card > small { display: block; margin-top: 18px; color: #78879b; font-size: 10px; line-height: 1.5; }
 @media (max-width: 700px) {
-  .sidebar { width: 74px; padding: 20px 9px 12px; align-items: center; }
-  .brand-row { padding: 0 0 35px; }
-  .brand-row > span, .side-label, .room-copy, .selected-dot, .sidebar-bottom .side-label, .user-list, .profile-row > div, .profile-row .online-dot { display: none; }
-  .room-list { width: 100%; }
-  .room-button { justify-content: center; padding: 10px 0; }
-  .room-icon { width: 36px; height: 36px; }
-  .sidebar-bottom { width: 100%; }
-  .profile-row { justify-content: center; padding: 13px 0 2px; }
-  .chat-header { min-height: 100px; padding: 19px 17px; gap: 8px; }
-  .chat-header h2 { font-size: 18px; }
-  .chat-header p { max-width: 210px; font-size: 10px; }
-  .connection-pill { padding: 7px 8px; font-size: 9px; white-space: nowrap; }
-  .message-area { padding: 25px 17px 15px; }
-  .composer-wrap { padding: 12px 14px 17px; }
-  .composer-hint { display: none; }
-  .entry-card { padding: 28px 23px; }
+  .sidebar {
+     width: 74px; padding: 20px 9px 12px; align-items: center;
+     }
+  .brand-row {
+     padding: 0 0 35px; 
+    }
+  .brand-row > span, .side-label, .room-copy, .selected-dot, .sidebar-bottom .side-label, .user-list, .profile-row > div, .profile-row .online-dot { 
+    display: none; 
+  }
+  .room-list { 
+    width: 100%; 
+  }
+  .room-button {
+     justify-content: center; 
+     padding: 10px 0; 
+    }
+  .room-icon {
+     width: 36px; 
+     height: 36px; 
+    }
+  .sidebar-bottom {
+     width: 100%; 
+    }
+  .profile-row {
+     justify-content: center; 
+     padding: 13px 0 2px; 
+    }
+  .chat-header {
+     min-height: 100px; 
+     padding: 19px 17px; 
+     gap: 8px; 
+    }
+  .chat-header h2 {
+     font-size: 18px; 
+    }
+  .chat-header p {
+     max-width: 210px; font-size: 10px; 
+    }
+  .connection-pill {
+     padding: 7px 8px; 
+     font-size: 9px; 
+     white-space: nowrap; 
+    }
+  .message-area { 
+    padding: 25px 17px 15px; 
+  }
+  .composer-wrap {
+     padding: 12px 14px 17px; 
+    }
+  .composer-hint { 
+    display: none; 
+  }
+  .entry-card {
+     padding: 28px 23px; 
+    }
 }
